@@ -15,25 +15,35 @@
             align-items: flex-start;
             flex-wrap: wrap;
             align-content: flex-start;
-
-
+        
         }
+
         .box{
-            background-color: rgb(20, 110, 20);
-            border: 1px solid black;
-            width: 250px;
-            
+            background-color: rgb(47, 187, 47);
+            border: 1px solid black;   
+            flex-grow: 1;
         }
+
         .altura50{
             height: 50px;
-
         }
+
+        .order{
+            order:-4;
+        }
+        
+        .grow2{
+            flex-grow: 2;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box altura50">2</div>
+        <div class="box grow2">1</div>
+        <div class="box order">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
         <div class="box">3</div>
     </div>
 </body>
